@@ -1,0 +1,220 @@
+# ================================
+# Bot YouTube MP3 - .gitignore
+# ================================
+
+# ⚠️ ARCHIVOS CRÍTICOS (NUNCA INCLUIR)
+# ====================================
+
+# Credenciales y configuración sensible
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# ====================================
+# ARCHIVOS TEMPORALES Y DOWNLOADS
+# ====================================
+
+# Directorio de descargas (mantener estructura, ignorar contenido)
+downloads/*.mp3
+downloads/*.mp4
+downloads/*.m4a
+downloads/*.webm
+downloads/*.wav
+downloads/*.flac
+downloads/*.opus
+
+# Cualquier archivo de audio en raíz
+*.mp3
+*.mp4
+*.m4a
+*.webm
+*.wav
+*.flac
+*.opus
+
+# Carpetas temporales
+temp/
+tmp/
+
+# ====================================
+# PYTHON Y ENTORNOS VIRTUALES
+# ====================================
+
+# Bytecode Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribución / empaquetado
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage
+.coverage
+.pytest_cache/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Entornos virtuales (IMPORTANTES)
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# uv específicos
+.python-version
+
+# ====================================
+# LOGS Y MONITOREO
+# ====================================
+
+# Logs del sistema (IMPORTANTE: mantener estructura, ignorar contenido)
+logs/*.log
+logs/*.log.*
+logs/bot_*.log
+logs/startup.log
+
+# Logs temporales en cualquier lugar
+*.log
+*.log.*
+
+# ====================================
+# EDITORES E IDEs  
+# ====================================
+
+# VSCode
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/tasks.json
+.vscode/.ropeproject
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim/Emacs
+*.swp
+*.swo
+*~
+.#*
+\#*#
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# ====================================
+# SISTEMA OPERATIVO
+# ====================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ====================================
+# ARCHIVOS TEMPORALES DIVERSOS
+# ====================================
+
+# Archivos temporales generales
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+# ====================================
+# CONFIGURACIONES LOCALES
+# ====================================
+
+# Configuraciones específicas del desarrollador
+config.local.py
+settings.local.py
+local_settings.py
+
+# Scripts personales
+personal_*.py
+private_*.py
+
+# Archivos de prueba personal
+test_personal.py
+my_test.py
+
+# ====================================
+# NOTA IMPORTANTE
+# ====================================
+# Este .gitignore protege:
+# 1. ✅ Credenciales (.env)
+# 2. ✅ Archivos de audio descargados
+# 3. ✅ Entornos virtuales (venv, .venv)
+# 4. ✅ Logs del bot (pero mantiene estructura)
+# 5. ✅ Archivos temporales del sistema
+# 6. ✅ Configuraciones de IDEs
